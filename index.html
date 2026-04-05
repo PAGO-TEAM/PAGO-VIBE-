@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGO VIBE | Stylish Name for FF & PUBG | Pro Instagram Bio Creator</title>
+   
+    <meta name="description" content="PAGO VIBE: Make your name stylish with 300+ pro fonts & symbols for FF, PUBG/BGMI. Generate 400+ Attitude, Funny & Professional bios for Instagram & Facebook!">
+    <meta name="keywords" content="Instagram Bio Generator, Stylish Name for BGMI, Attitude Bio for Boys, Professional LinkedIn Bio, Funny Facebook Bios, PAGO VIBE, Free Fire Name Style, Stylish Name Maker">
+    
+   
+    
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-primary: #00d2ff;
+            --accent-secondary: #3a7bd5;
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        :root {
+            --attitude-gradient: linear-gradient(45deg, #f59e0b, #dc2626); /* Gold to Red Flare */
+            --bg: #000000;
+            --card-bg: rgba(20, 20, 20, 0.9);
+        }
+        body {
+            margin: 0;
+            background: #000;
+            font-family: sans-serif;
+            color: white; /* Default text color white kiya */
+        }
+
+        #st {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            padding: 0 20px;
+            margin-top:80px;
+        }
+
+        #aa {
+            font-weight: bolder;
+            font-size: 60px;
+            margin-bottom: 10px;
+            color: red;
+            display: flex;
+            align-items: center;
+        }
+
+        #se {
+            margin-bottom: 80px; /* Margin thoda kam kiya taaki scroll dikhe */
+            color: white;
+            font-weight: bolder;
+            font-size: 18px;
+            text-align: center;
+            max-width: 300px;
+            line-height: 1.5;
+            
+        }
+
+        #et {
+            padding: 20px 30px;
+            border-radius: 40px;
+            font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-weight: bolder;
+            color: white;
+            background: #000;
+        
+        
+            margin-top:70px;
+        }
+
+    
+        #sr {
+            margin-top: 50px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        .line {
+            width: 1.5px;
+            height: 70px;
+            background: white;
+            animation: papa 1.5s ease infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes papa {
+            0% { opacity: 0; transform: translateY(0); }
+            50% { opacity: 1; }
+            100% { opacity: 0; transform: translateY(20px); }
+        }
+
+        /* NEXT SECTION FIXES */
+        #next {
+            padding: 100px 20px; /* Padding badhai taaki space mile */
+            background: #000; /* Background black hi rakha */
+            text-align: center;
+            color: white; /* Text color white hona zaruri hai */
+        }
+
+        #next h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        #next p {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 500px;
+            margin: auto;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .cards {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+            width: 85%;
+            max-width: 400px;
+            border: 1px solid #333;
+            text-align: left; /* Card ka text left rakha */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #222;
+            border-color: blue;
+        }
+           .header { padding: 60px 20px; background: linear-gradient(180deg, #111 0%, #000 100%); }
+        .logo { font-size: 50px; font-weight: 900; letter-spacing: -2px; }
+        .blue { color: #0044ff; }
+        
+        .input-area { margin: 20px auto; max-width: 600px; padding: 20px; }
+        #userInput { 
+            width: 80%; padding: 18px; border-radius: 50px; border: 2px solid #222; 
+            background: #111; color: #fff; font-size: 20px; outline: none; transition: 0.3s;
+        }
+        #userInput:focus { border-color: #0044ff; box-shadow: 0 0 20px rgba(0, 68, 255, 0.3); }
+        
+        button { 
+            margin-top: 25px; padding: 18px 50px; border-radius: 50px; border: none;
+            background: #0044ff; color: #fff; font-size: 18px; font-weight: bold; 
+            transition: 0.3s; box-shadow: 0 5px 15px rgba(0, 68, 255, 0.4);
+        }
+        #bioBtn:hover { transform: translateY(-3px); background: #0033cc; }
+
+        #resultGrid { 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 15px; padding: 40px; max-width: 1300px; margin: 0 auto;
+        }
+        .name-card { 
+            background: #0a0a0a; border: 1px solid #1a1a1a; padding: 25px; border-radius: 15px;
+            font-size: 22px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; justify-content: center;
+        }
+        .name-card:hover { border-color: #0044ff; background: #111; transform: scale(1.03); }
+
+        #notification {
+            visibility: hidden; min-width: 250px; background-color: #0044ff; color: #fff;
+            text-align: center; border-radius: 10px; padding: 16px; position: fixed;
+            z-index: 100; left: 50%; bottom: 30px; transform: translateX(-50%);
+        }
+        #notification.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+        #bioBtn, #nameBtn {
+  position: relative;
+  padding: 14px 35px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #00f5ff, #ff00c8);
+  border: none;
+  border-radius: 40px;
+  
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Shine Effect */
+#bioBtn::before, #nameBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  transform: skewX(-25deg);
+}
+
+/* Hover Shine */
+#bioBtn:hover::before, #nameBtn:hover::before {
+  left: 150%;
+  transition: 0.7s;
+}
+
+/* Glow Border */
+#bioBtn::after, #nameBtn::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #00f5ff, #ff00c8, #00f5ff);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#bioBtn:hover::after, #nameBtn:hover::after {
+  opacity: 1;
+}
+
+/* Hover Lift */
+#bioBtn:hover, #nameBtn:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* Click Effect */
+#bioBtn:active, #nameBtn:active {
+  transform: scale(0.95);
+}
+
+/* Ripple */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background: rgba(255,255,255,0.5);
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}.blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.2;
+            animation: move 10s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-50%, -20%); }
+            to { transform: translate(50%, 20%); }
+        }
+
+        /* Heading Style */
+        .header-container {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .heading-pago {
+            font-size: 5rem;
+            font-weight: 800;
+            letter-spacing: 10px;
+            background: linear-gradient(to bottom, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.1));
+        }
+
+        .sub-text {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Button Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 450px;
+            padding: 20px;
+        }
+
+        /* Advanced Button Styling */
+        .bio-btn {
+            position: relative;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            padding: 20px 25px;
+            border-radius: 16px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            opacity: 0;
+            animation: slideUp 0.6s ease-out forwards;
+        }
+
+        .bio-btn::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, rgba(0, 210, 255, 0.1), transparent);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+
+        .bio-btn:hover {
+            transform: translateX(10px) scale(1.02);
+            border-color: var(--accent-primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .bio-btn:hover::before {
+            width: 100%;
+        }
+
+        /* Icon or Arrow in Button */
+        .bio-btn::after {
+            content: '→';
+            font-size: 1.5rem;
+            color: var(--accent-primary);
+            transition: transform 0.3s ease;
+        }
+
+        .bio-btn:hover::after {
+            transform: translateX(5px);
+        }
+
+        /* Staggered Delay */
+        .btn-1 { animation-delay: 0.2s; border-left: 4px solid #60a5fa; }
+        .btn-2 { animation-delay: 0.3s; border-left: 4px solid #34d399; }
+        .btn-3 { animation-delay: 0.4s; border-left: 4px solid #fbbf24; }
+        .btn-4 { animation-delay: 0.5s; border-left: 4px solid #f87171; }
+        .btn-5 { animation-delay: 0.6s; border-left: 4px solid #c084fc; }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 480px) {
+            .heading-pago { font-size: 3.5rem; }
+            .container { width: 90%; }
+            .bio-btn { padding: 18px; font-size: 1rem; }
+        }
+          /* Purane .containe ko isse replace karein */
+.containe {
+height:100%;
+    width: 92% !important; /* Fixed width ki jagah percentage */
+    max-width: 450px; 
+    padding: 25px;
+    margin: 20px auto; /* Isse box center mein rahega */
+    border-radius: 24px; 
+    background: var(--card-bg);
+    backdrop-filter: blur(20px); 
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.2); 
+    text-align: center;
+    box-sizing: border-box; /* Padding handle karne ke liye */
+}
+
+        h2 { 
+            font-family: 'Poppins', sans-serif; 
+            font-size: 1.6rem; margin-bottom: 20px; color: #f59e0b; 
+            text-transform: uppercase; letter-spacing: 3px;
+            text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+
+      #name   {
+            width: 85%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(30, 30, 30, 0.8); color: white; font-size: 1rem; outline: none; margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        #name:focus { border-color: #dc2626; box-shadow: 0 0 10px rgba(220, 38, 38, 0.5); }
+
+        .sao {
+            width: 100%; padding: 15px; border-radius: 12px; border: none; font-weight: 900;
+            color: white; background: var(--attitude-gradient); cursor: pointer; transition: 0.3s;
+            font-family: 'Poppins', sans-serif; text-transform: uppercase; letter-spacing: 1px;
+            font-size:15px;
+        }
+
+        .sao:hover { transform: scale(1.02); box-shadow: 0 5px 20px rgba(220, 38, 38, 0.5); }
+
+        #outputWrapper {
+            margin-top: 25px; max-height: 400px; overflow-y: auto;
+            display: grid; gap: 12px; padding-right: 5px;
+        }
+
+        #outputWrapper::-webkit-scrollbar { width: 4px; }
+        #outputWrapper::-webkit-scrollbar-thumb { background: #dc2626; border-radius: 10px; }
+
+        .bio-item {
+            background: rgba(255, 255, 255, 0.02); padding: 18px; border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05); font-size: 0.95rem;
+            cursor: pointer; transition: 0.2s; text-align: left; line-height: 1.6;
+        }
+
+        .bio-item:hover { background: rgba(220, 38, 38, 0.05); border-color: #dc2626; }
+
+        .note { margin-top: 20px; font-size: 11px; color: rgba(245, 158, 11, 0.6); text-transform: uppercase; font-weight: bold; }
+        
+        .pago-screen-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background: radial-gradient(circle at top right, #334155, #0f172a);
+            border: none; /* Body/Wrapper level border removed */
+        }
+
+        .pago-main-card {
+            width: 100%; 
+            max-width: 450px; 
+            padding: 25px;
+            border-radius: 24px; 
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(243, 129, 129, 0.2); /* Sirf card ka halka border */
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); 
+            text-align: center;
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .pago-title-text { 
+            font-family: 'Comic Neue', cursive; 
+            font-size: 1.8rem; 
+            margin-bottom: 20px; 
+            color: #fce38a; 
+            text-shadow: 2px 2px 10px rgba(243, 129, 129, 0.3);
+        }
+
+        .pago-input-box {
+            width: 100%; 
+            padding: 14px; 
+            border-radius: 12px; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.7); 
+            color: white; 
+            font-size: 1rem; 
+            outline: none; 
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .pago-btn-submit {
+            width: 100%; 
+            padding: 14px; 
+            border-radius: 12px; 
+            border: none; 
+            font-weight: 700;
+            color: #333; 
+            background: linear-gradient(45deg, #fce38a, #f38181); 
+            cursor: pointer; 
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .pago-btn-submit:hover { 
+            transform: scale(1.02); 
+            box-shadow: 0 5px 15px rgba(243, 129, 129, 0.4); 
+        }
+
+        #pago-results-area {
+            margin-top: 25px; 
+            max-height: 400px; 
+            overflow-y: auto;
+            display: grid; 
+            gap: 12px; 
+            padding-right: 5px;
+        }
+
+        #pago-results-area::-webkit-scrollbar { width: 4px; }
+        #pago-results-area::-webkit-scrollbar-thumb { background: #f38181; border-radius: 10px; }
+
+        .pago-single-bio {
+            background: rgba(255, 255, 255, 0.03); 
+            padding: 15px; 
+            border-radius: 10px;
+            border: 1px solid rgba(243, 129, 129, 0.1); 
+            font-size: 0.9rem;
+            cursor: pointer; 
+            transition: 0.2s; 
+            text-align: left; 
+            line-height: 1.5;
+            white-space: pre-line;
+        }
+
+        .pago-single-bio:hover { 
+            background: rgba(243, 129, 129, 0.1); 
+            border-color: #f38181; 
+        }
+
+        .pago-bottom-note { 
+            margin-top: 20px; 
+            font-size: 11px; 
+            color: rgba(252, 227, 138, 0.6); 
+            text-transform: uppercase; 
+        }
+        .pago-unique-btn {
+            position: relative;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 24px 28px;
+            border-radius: 20px;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(12px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .pago-unique-btn:hover {
+            transform: translateX(12px) scale(1.03);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .pago-unique-btn:active {
+            transform: scale(0.97);
+        }
+
+        @keyframes pagoFadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+           
+        
+        
+        :root {
+            --pago-gaming-gradient: linear-gradient(45deg, #00f2fe, #4facfe);
+            --pago-card-bg: rgba(15, 23, 42, 0.8);
+        }
+
+    
+     
+     
+     
+        /* Unique Wrapper to isolate the component */
+      .pago-main-section {
+    width: 90%; /* 90% se badal kar 100% kiya */
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, #1e1b4b, #020617);
+    display: none; /* Default hidden */
+    flex-direction: column; /* Center alignment ke liye */
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box; /* Padding handling ke liye */
+}
+
+
+        .pago-container {
+            width: 100%; 
+            max-width: 450px; 
+            padding: 25px;
+            border-radius: 24px; 
+            background: var(--pago-card-bg);
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.1); 
+            text-align: center;
+            color: #f1f5f9;
+        }
+
+        .pago-title { 
+            font-family: 'Orbitron', sans-serif; 
+            font-size: 1.4rem; 
+            margin-bottom: 20px; 
+            color: #00f2fe; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+
+        .pago-input {
+            width: 90%; 
+            padding: 14px; 
+            border-radius: 12px; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.6); 
+            color: white; 
+            font-size: 1rem; 
+            outline: none; 
+            margin-bottom: 15px;
+        }
+
+        .pago-btn {
+            width: 100%; 
+            padding: 14px; 
+            border-radius: 12px; 
+            border: none; 
+            font-weight: 600;
+            color: white; 
+            background: var(--pago-gaming-gradient); 
+            cursor: pointer; 
+            transition: 0.3s;
+            font-family: 'Orbitron', sans-serif; 
+            text-transform: uppercase;
+        }
+
+        .pago-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 242, 254, 0.3);
+        }
+
+        #pago-outputWrapper {
+            margin-top: 25px; 
+            max-height: 400px; 
+            overflow-y: auto;
+            display: grid; 
+            gap: 12px; 
+            padding-right: 5px;
+        }
+
+        #pago-outputWrapper::-webkit-scrollbar { width: 4px; }
+        #pago-outputWrapper::-webkit-scrollbar-thumb { background: #00f2fe; border-radius: 10px; }
+
+        .pago-bio-item {
+            background: rgba(255, 255, 255, 0.03); 
+            padding: 15px; 
+            border-radius: 10px;
+            border: 1px solid rgba(0, 242, 254, 0.1); 
+            font-size: 0.9rem;
+            cursor: pointer; 
+            transition: 0.2s; 
+            text-align: left; 
+            line-height: 1.5;
+            white-space: pre-line; /* Essential for \n formatting */
+        }
+
+        .pago-bio-item:hover { 
+            background: rgba(0, 242, 254, 0.05); 
+            border-color: #00f2fe; 
+        }
+
+        .pago-note { 
+            margin-top: 20px; 
+            font-size: 11px; 
+            color: rgba(0, 242, 254, 0.5); 
+            text-transform: uppercase; 
+        }    
+         .pgo_v2_main_wrapper_99 {
+            width: 100%; max-width: 450px; padding: 25px;
+            border-radius: 24px; background: var(--pgo_v2_glass_card);
+            backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); text-align: center;
+        }
+
+        #pgo_v2_head_txt { font-size: 1.5rem; margin-bottom: 20px; color: white; letter-spacing: 1px; }
+
+        /* Unique ID for Input Field */
+        #pgo_v2_user_input_node {
+            width: 100%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.6); color: white; font-size: 1rem; outline: none; margin-bottom: 15px;
+        }
+
+        /* Unique Class for Button */
+        .pgo_v2_trigger_btn_primary {
+            width: 100%; padding: 14px; border-radius: 12px; border: none; font-weight: 600;
+            color: white; background: var(--pgo_v2_primary); cursor: pointer; transition: 0.3s;
+        }
+
+        /* Unique ID for Result List */
+        #pgo_v2_render_engine_output {
+            margin-top: 25px; max-height: 400px; overflow-y: auto;
+            display: grid; gap: 12px; padding-right: 5px;
+        }
+
+        #pgo_v2_render_engine_output::-webkit-scrollbar { width: 4px; }
+        #pgo_v2_render_engine_output::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 10px; }
+
+        /* Unique Class for Bio Cards */
+        .pgo_v2_item_card_box {
+            background: rgba(255, 255, 255, 0.03); padding: 15px; border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05); font-size: 0.9rem;
+            cursor: pointer; transition: 0.2s; text-align: left; line-height: 1.5; white-space: pre-wrap;
+        }
+
+        .pgo_v2_item_card_box:hover { background: rgba(37, 99, 235, 0.1); border-color: #2563eb; }
+
+        .pgo_v2_bottom_note_txt { margin-top: 20px; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; }
+        :root {
+            --pgo_v2_primary: linear-gradient(45deg, #2563eb, #1d4ed8); 
+            --pgo_v2_bg_main: #0f172a;
+            --pgo_v2_glass_card: rgba(30, 41, 59, 0.7);
+        }
+        
+        
+        
+          .conainer {
+            width: 75%; max-width: 450px; padding: 25px;
+            border-radius: 24px; background: var(--card-bg);
+            backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); text-align: center;
+        }
+
+        #u { font-size: 1.5rem; margin-bottom: 20px; color: white; text-shadow: 0 0 15px rgba(255, 65, 108, 0.4); }
+
+        #nal {
+            width: 85%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.6); color: white; font-size: 1rem; outline: none; margin-bottom: 15px;
+        }
+
+        .lo {
+            padding: 12px 25px; border-radius: 12px; border: none; font-weight: 600;
+            color: white; background: var(--primary-gradient); cursor: pointer; transition: 0.3s;
+        }
+
+        /* Result Box Style */
+        #outputWraer {
+            margin-top: 25px; max-height: 400px; overflow-y: auto;
+            display: grid; gap: 10px; padding-right: 5px;
+        }
+
+        /* Custom Scrollbar */
+        #outputWrapper::-webkit-scrollbar { width: 5px; }
+        #outputWrapper::-webkit-scrollbar-thumb { background: #ff416c; border-radius: 10px; }
+
+        .bo-tm {
+            background: rgba(0, 0, 0, 0.4); padding: 15px; border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.9rem;
+            cursor: pointer; transition: 0.2s; text-align: left;
+        }
+
+        .bo-tm:hover { background: rgba(255, 65, 108, 0.1); transform: scale(1.02); }
+
+        .nte { margin-top: 20px; font-size: 12px; color: rgba(255,255,255,0.5); }
+        :root {
+            --primary-gradient: linear-gradient(45deg, #ff416c, #ff4b2b);
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+        }
+        
+        
+        
+     
+        /* Back Button Design */
+        .back-nav {
+            position: absolute; top: 4px; left: 4px; width: 45px; height: 45px;
+            background: rgba(255,255,255,0.1); border-radius: 12px; display: flex;
+            align-items: center; justify-content: center; cursor: pointer;
+        }
+        .arrow-icon { width: 10px; height: 10px; border-left: 3px solid #38bdf8; border-bottom: 3px solid #38bdf8; transform: rotate(45deg); }
+
+
+    </style>
+</head>
+<body><div style="display:nne;" id="w">
+    
+    <div id="st">
+        <h1 style="font-family: sans-serif; font-size: 60px; font-weight: 900; letter-spacing: 6px; text-align: center; margin: 0; text-transform: uppercase; background: linear-gradient(to bottom, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2)); font-size:60px; margin-top:10px">
+    PAGO VIBE
+</h1>
+
+            
+    <div id="se" style="font-size:15px; color: #94a3b8;">
+        Unleash Your Identity: Generate Stylish Names & Pro Bios Instantly! 💎  
+        </div>  
+
+            
+        <div>
+         <button onclick="jk()" id="et" style="font-size:16px;">Start creating with PAGO VIBE</button>
+        </div>   
+            
+        <div>
+            <h3 id="sr">Scroll to explore</h3>
+        </div>   
+        <div class="line"></div>
+    </div>
+
+    <div id="next">
+        <h2>✨ Why Choose PAGO VIBE ?</h2>
+
+        <p>
+           PAGO VIBE is designed to make your Social Media & Gaming Profiles stand out from the crowd. 
+            In today’s world, your Name & Bio is your identity.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                🚀 <b> Instant Style & Bio Creation</b>
+              <p style="font-size:14px"> Generate high-quality, Stylish Names and Bios in just one click without any effort.</p>
+            </div>
+
+            <div class="card">
+    🔥 <b> The Bio Hub: 400+ Ways to Stand Out.</b><br>
+    <p style="font-size:14px; color: rgba(255,255,255,0.7); margin-bottom: 10px;">
+        Get the perfect look for your profile in seconds. 100+ trending bios available in every category!"
+    </p>
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 1.8;">
+        <li>😎 <b>Attitude & Stylish:-</b> </li>
+        <li>🎬 <b>Professional:-</b> </li>
+      
+        <li>🎮 <b>Gaming:-</b> </li>
+        <li>😂 <b>Funny & Witty:-</b> </li>
+    </ul>
+</div>
+
+
+            <div class="card">
+                🎨 <b> Style Your Name</b><br>
+    <p style="font-size:14px">  Transform your name with 300+ stylish fonts and pro symbols! Perfect for creating unique identities for: </p><ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 1.8;">
+        <li>🎮 <b> BGMI & Free Fire: Get that pro-gamer look.</b> </li>
+        <li> 📱<b>Social Media: Stand out on Instagram & WhatsApp etc.</b> </li>
+      
+        <li> Type your name & Copy the magic! ✨ </li>
+      
+    </ul>
+            </div>
+
+            <div class="card">
+                😎 <b>Perfect for Everyone</b><br>
+           <p style="font-size:14px">  Whether you're a student, YouTuber, Gamer, or Influencer — PAGO VIBE is built for you.</p>
+            </div>
+        </div>
+
+        <p style="margin-top:60px; font-weight: bold;">
+            ✨ Start using PAGO VIBE today and upgrade your profile instantly.<br><br>
+            <span style="color:rgba(255,255,255,0.5); font-weight:normal;">💯 No login required • Free to use • Fast and easy</span>
+        </p>
+    
+    
+    <footer style="background: #050505; padding: 40px 10px; border-top: 1px solid #1a1a1a; margin-top: 50px; width: 100%; box-sizing: border-box; text-align: center; border-bottom:1px solid #1a1a1a;">
+    
+    <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; flex-wrap: nowrap;">
+        <span onclick="document.getElementById('pago-about').style.display='block';" style="color: #00d2ff; cursor: pointer; font-size: 14px; text-decoration: underline; white-space: nowrap;">About Us</span>
+        <span onclick="document.getElementById('pago-privacy').style.display='block';" style="color: #00d2ff; cursor: pointer; font-size: 14px; text-decoration: underline; white-space: nowrap;">Privacy Policy</span>
+        <span onclick="document.getElementById('pago-contact').style.display='block';" style="color: #00d2ff; cursor: pointer; font-size: 14px; text-decoration: underline; white-space: nowrap;">Contact Us</span>
+    </div>
+
+    <p style="color: #888; font-size: 14px; font-weight: bold; margin: 0; letter-spacing: 1px;">
+        PAGO VIBE <span style="color: #444; font-weight: normal; margin: 0 5px;">|</span> 
+        <span style="color: #fff; text-transform: uppercase; font-size: 12px; letter-spacing: 2px;">Created by PAGO</span>
+    </p>
+
+    <p style="color: #333; font-size: 11px; margin-top: 8px;">
+        &copy; 2026 All Rights Reserved
+    </p>
+</footer>
+
+</div>
+    </div>
+    
+    
+</div>
+
+
+<div id="q" style="display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; width: 100%; background: radial-gradient(circle at top right, #1e293b, #0f172a); font-family: 'Inter', sans-serif; padding: 20px; box-sizing: border-box; position: relative; margin-top:0">
+    
+ <div class="back-nav" onclick="document.getElementById('q').style.display='none'; document.getElementById('w').style.display='block'; document.body.style.boxSizing='border-box'; document.body.style.margin='0'; document.body.style.height='100%'; document.body.style.overflowX='hidden'; document.body.style.padding='0'; document.body.style.background='#000'"><div class="arrow-icon"></div></div>
+    
+    <div style="text-align: center; margin-bottom: 70px; animation: pagoFadeIn 0.8s ease-out;">
+        
+        <h1 id="pago-title-main" style="font-size: clamp(3.5rem, 10vw, 5.5rem); font-weight: 800; letter-spacing: 12px; background: linear-gradient(to bottom, #ffffff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; filter: drop-shadow(0 0 20px rgba(255,255,255,0.15)); margin-top:40px;">
+            PAGO VIBE
+        </h1>
+        <p id="pago-subtitle-main" style="color: #94a3b8; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-top: 8px; opacity: 0.9;">
+            AI Premium Creator
+        </p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 22px; width: 100%; max-width: 420px; margin-top:140px;">
+        
+        <button id="pago-btn-bio-select" onclick="ap()" class="pago-unique-btn" style="border-left: 6px solid #00f5ff;">
+            <span style="display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 1.6rem;">✨</span>
+                <span>Generate Bios</span>
+            </span>
+            <span style="color: #00f5ff; font-size: 1.6rem;">→</span>
+        </button>
+
+        <button id="pago-btn-name-select" onclick="jj()" class="pago-unique-btn" style="border-left: 6px solid #ff00c8;">
+            <span style="display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 1.6rem;">💎</span>
+                <span>Generate Stylish Name</span>
+            </span>
+            <span style="color: #ff00c8; font-size: 1.6rem;">→</span>
+        </button>
+
+    </div></div>
+
+  
+    
+
+
+
+
+
+<div style="display:none;" id="pa">
+    <div class="back-nav" onclick="document.getElementById('pa').style.display='none'; document.getElementById('q').style.display='block';
+    document.body.style.background='radial-gradient(circle at top right, #1e293b, #0f172a)';
+  "><div class="arrow-icon"></div></div>
+<div class="header" style="display:flex, justify-content:center;">
+        <h1 style="text-align:center; font-weight: 800; letter-spacing: 5px; background: linear-gradient(to bottom, #ffffff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; filter: drop-shadow(0 0 20px rgba(255,255,255,0.15));"> <span class="logo-text">PA<span class="blue">GO</span> VIBE</span> </h1>
+    <p style="color: #94a3b8; font-size: 18px; text-align:center;">✨ 300+ Stylish Fonts & Pro Symbols ✨</p>
+</div>
+
+<div class="input-area">
+    <input type="text" id="userInput" placeholder="Enter Your Name..." autocomplete="off">
+    <br>
+    <button onclick="generate300Styles()">Generate 300+ Styles ⚡</button>
+</div>
+
+<div id="resultGrid"></div>
+<div id="notification">Copied to Clipboard! ✅</div></div>
+
+
+
+<div style="display:none;" id="qw"> 
+    
+   
+    
+    <div class="blob"></div>
+<div class="back-nav" onclick="document.getElementById('qw').style.display='none'; document.getElementById('q').style.display='block'; document.body.style.boxSizing='border-box'; document.body.style.margin='0'; document.body.style.height='100%'; document.body.style.overflowX='hidden'; document.body.style.padding='0'; document.body.style.width='100% ';"
+><div class="arrow-icon"></div></div>    
+    <div class="header-container">
+    
+        <h1 class="heading-pago">PAGO VIBE</h1>
+        <p class="sub-text">AI Bio Architecture</p>
+    </div>
+ 
+
+    <div class="container">
+        <button class="bio-btn btn-1" onclick="aqo()">GENERATE ANY BIOS</button>
+        <button class="bio-btn btn-2" onclick="namo()">GENERATE PROFESSIONAL BIOS</button>
+        <button class="bio-btn btn-3" onclick="sol()">GENERATE FUNNY BIOS</button>
+        <button class="bio-btn btn-4" onclick="aq()">GENERATE GAMING BIOS</button>
+        <button class="bio-btn btn-5"  onclick="tt()">GENERATE ATTITUDE BIOS</button>
+    </div>
+</div>
+
+<div class="containe" id="o"  style="display:none; margin-top:0px;">
+     <div class="back-nav"
+      onclick="document.getElementById('o').style.display='none'; document.getElementById('qw').style.display='block';     document.body.style.background='radial-gradient(circle at top right, #1e293b, #0f172a)'
+;     
+   "><div class="arrow-icon"></div></div>
+   
+ 
+    <h2>👹 Attitude Section 🦁</h2>
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+
+    <button onclick="generateAttitudeBios()" class="sao">Generate 100+ Killer Bios ⚡</button>
+
+    <div id="outputWrapper">
+        <div style="color: #555; margin-top: 20px; font-size: 14px;">Your bios will appear here ...</div>
+    </div>
+
+    <div class="note">✨ TAP TO COPY • ROYAL ATTITUDE • NO RULES</div>
+</div>
+
+<div class="pago-screen-wrapper" id="qo" style="display:none">
+       
+    
+    
+      
+      
+    <div class="pago-main-card">
+      <div class="back-nav" onclick="document.getElementById('qo').style.display='none'; document.getElementById('qw').style.display='block';    document.body.style.background='radial-gradient(circle at top right, #1e293b, #0f172a)';"><div class="arrow-icon"></div></div>  
+      
+            <h2 class="pago-title-text">😂 Funny Section 😂</h2>
+
+            <input type="text" id="pago-field-name" class="pago-input-box" placeholder="Enter Your Name ">
+
+            <button onclick="pagoRunGenerator()" class="pago-btn-submit">Generate 100+ Funny Bios 🍌</button>
+
+            <div id="pago-results-area">
+                <div style="color: gray; margin-top: 20px; font-size: 14px; text-align: center;">Your bios will appear here...</div>
+            </div>
+
+            <div class="pago-bottom-note">✨ TAP TO COPY • 100%  FREE</div>
+        </div>
+    </div>
+   
+   
+   <div class="pago-main-section" style="display:none;" id="oi">
+    
+    <div class="pago-container">
+     <div class="back-nav" onclick="document.getElementById('oi').style.display='none'; document.getElementById('qw').style.display='block'; document.body.style.background='radial-gradient(circle at top right, #1e293b, #0f172a)';   window.scrollTo(0,0);"><div class="arrow-icon"></div></div>   
+        <h2 class="pago-title" style="margin-top:40px">🎮 Gaming  Section 🎮</h2>
+
+        <input type="text" id="pago-ign-input" class="pago-input" placeholder="Enter Your Name ">
+
+        <button onclick="pagoGenerateAction()" class="pago-btn">Generate 100+ Pro Gaming Bios ⚡</button>
+
+        <div id="pago-outputWrapper">
+            <div style="color: gray; margin-top: 20px; font-size: 14px;">Your bios will appear here...</div>
+        </div>
+
+        <div class="pago-note">✨ TAP TO COPY • PRO GAMER • ZERO LAG</div>
+    </div>
+</div> 
+
+
+<div class="pgo_v2_main_wrapper_99" style="display:none;  width:75%;" id="qe">
+   <div class="back-nav" onclick="document.getElementById('qe').style.display='none'; document.getElementById('qw').style.display='block'; document.body.style.background='radial-gradient(circle at top right, #1e293b, #0f172a)';"><div class="arrow-icon"></div></div> 
+    <h2 id="pgo_v2_head_txt" style="margin-top:30px">💼 Professional Section 💼 </h2>
+
+    <input type="text" id="pgo_v2_user_input_node" placeholder="Enter Your  Name" style="width:90%">
+
+    <button onclick="pgo_v2_start_generation()" class="pgo_v2_trigger_btn_primary">Generate 100+ Professional Bios 🚀</button>
+
+    <div id="pgo_v2_render_engine_output">
+        <div style="color: gray; margin-top: 20px; font-size: 14px;">Your bios will appear here...</div>
+    </div>
+
+    <div class="pgo_v2_bottom_note_txt">✨ TAP TO COPY • PROFESSIONAL • ZERO EFFORT</div>
+</div>
+
+
+<div class="conainer" style="display:none; padding-top:30px" id="ol">
+     <div class="back-nav" onclick="document.getElementById('ol').style.display='none'; document.getElementById('qw').style.display='block'; document.body.style.background='radial-gradient(circle at top right, #1e293b, #0f172a)';"><div class="arrow-icon"></div></div>
+    <h2 id="u">🔥 PAGO VIBE MIX 🔥</h2>
+
+    <input type="text" id="nal" placeholder="Enter Your Name ">
+ 
+    <button onclick="generateMultipleBios()" class="lo">Generate 100+ Bios ⚡</button>
+
+    <div id="outputWraer">
+        <div style="color: gray; margin-top: 20px;">Your stylish bios will appear here...</div>
+    </div>
+
+    <div class="nte">✨ CLICK ANY BIO TO COPY • 💯 FREE</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="pago-about" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; padding:30px; box-sizing:border-box; overflow-y:auto; backdrop-filter: blur(10px);">
+    
+    <div style="max-width: 600px; margin: 0 auto; border: 1px solid #222; padding: 30px; border-radius: 20px; background: #0a0a0a; box-shadow: 0 0 30px rgba(0, 210, 255, 0.1);">
+        
+        <h2 style="color:#00d2ff; text-align:center; letter-spacing:4px; font-weight: 900; margin-top: 0; text-transform: uppercase;">About PAGO VIBE</h2>
+        
+        <p style="color:#ffffff; line-height:1.8; font-size: 16px; margin-bottom: 20px;">
+            Launched in 2026, <b>PAGO VIBE</b> is an advanced AI-powered digital identity platform designed to help everyone—from <b>Professional Entrepreneurs</b> and <b>Creative Content Creators</b> to <b>Hardcore Gamers</b>—stand out in the digital world.
+        </p>
+
+        <p style="color:#cccccc; line-height:1.8; font-size: 15px;">
+            In today's social media and gaming era, your online profile is your first impression. We provide a complete identity toolkit for premium profile customization:
+        </p>
+
+        <div style="margin: 25px 0; padding-left: 5px;">
+            <div style="color:#00d2ff; margin-bottom: 10px; font-size: 14px;">⚡ <b>300+ Aesthetic Fonts:</b> Unique symbols for BGMI & Free Fire.</div>
+            <div style="color:#00d2ff; margin-bottom: 10px; font-size: 14px;">⚡ <b>Professional Business Bios:</b> Tailored for LinkedIn & Personal Brands.</div>
+            <div style="color:#00d2ff; margin-bottom: 10px; font-size: 14px;">⚡ <b>Attitude & Royal Captions:</b> Lead your profile with confidence.</div>
+            <div style="color:#00d2ff; margin-bottom: 10px; font-size: 14px;">⚡ <b>Witty & Funny Bios:</b> Add humor to Instagram & WhatsApp.</div>
+        </div>
+
+        <p style="color:#888; line-height:1.6; font-size: 14px; border-top: 1px solid #222; padding-top: 20px;">
+            PAGO VIBE is committed to simplicity. We require <b>No Login</b> and offer <b>Zero Hidden Charges</b>. Our goal is to empower users to express their unique personality globally.
+        </p>
+
+        <p style="text-align:center; color:#444; font-size:11px; font-weight:bold; letter-spacing:2px; margin: 30px 0 20px 0;">
+            A PAGO PRODUCT • CREATIVE INTELLIGENCE
+        </p>
+
+        <div style="text-align:center;">
+            <button onclick="this.parentElement.parentElement.parentElement.style.display='none'" 
+                    style="padding:15px 50px; background:linear-gradient(45deg, #00d2ff, #3a7bd5); border:none; border-radius:40px; color:#fff; font-weight:bold; cursor:pointer; box-shadow: 0 5px 15px rgba(0,210,255,0.3); transition: 0.3s; width: 100%; max-width: 200px;">
+                CLOSE
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div id="pago-privacy" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; padding:30px; box-sizing:border-box; overflow-y:auto; backdrop-filter: blur(10px);">
+    
+    <div style="max-width: 600px; margin: 0 auto; border: 1px solid #222; padding: 30px; border-radius: 20px; background: #0a0a0a; box-shadow: 0 0 30px rgba(0, 210, 255, 0.1);">
+        
+        <h2 style="color:#00d2ff; text-align:center; letter-spacing:4px; font-weight: 900; margin-top: 0; text-transform: uppercase;">Privacy Policy</h2>
+        
+        <p style="color:#ffffff; line-height:1.8; font-size: 15px; margin-bottom: 20px;">
+            At <b>PAGO VIBE</b>, your privacy is our top priority. This policy outlines how we handle information and ensure a secure user experience.
+        </p>
+
+        <div style="margin-bottom: 25px;">
+            <div style="color:#00d2ff; font-weight: bold; margin-bottom: 5px;">🛡️ Data Collection</div>
+            <p style="color:#ccc; font-size: 14px; margin: 0; line-height: 1.6;">We do <b>not</b> collect, store, or share any personal data. All names and bios generated are processed locally on your device's browser. Your inputs never reach our servers.</p>
+        </div>
+
+        <div style="margin-bottom: 25px; border-left: 3px solid #00d2ff; padding-left: 15px;">
+            <div style="color:#00d2ff; font-weight: bold; margin-bottom: 5px;">🍪 Google AdSense & Cookies</div>
+            <p style="color:#ccc; font-size: 14px; margin: 0; line-height: 1.6;">We use <b>Google AdSense</b> to serve advertisements. Google uses cookies to serve ads based on a user's prior visits to our website or other websites. These cookies enable Google to provide relevant ads to you.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <div style="color:#00d2ff; font-weight: bold; margin-bottom: 5px;">⚙️ Your Choices</div>
+            <p style="color:#ccc; font-size: 14px; margin: 0; line-height: 1.6;">Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" style="color:#00d2ff; text-decoration: underline;">Google Ad Settings</a>.</p>
+        </div>
+
+        <p style="text-align:center; color:#444; font-size:11px; font-weight:bold; letter-spacing:2px; margin: 30px 0 20px 0;">
+            SECURE ACCESS • A PAGO BRAND SERVICE
+        </p>
+
+        <div style="text-align:center;">
+            <button onclick="this.parentElement.parentElement.parentElement.style.display='none'" 
+                    style="padding:15px 50px; background:linear-gradient(45deg, #00d2ff, #3a7bd5); border:none; border-radius:40px; color:#fff; font-weight:bold; cursor:pointer; box-shadow: 0 5px 15px rgba(0,210,255,0.3); transition: 0.3s; width: 100%; max-width: 200px;">
+                CLOSE
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="pago-contact" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.96); z-index:9999; padding:30px; box-sizing:border-box; overflow-y:auto; backdrop-filter: blur(12px);">
+    
+    <div style="max-width: 550px; margin: 0 auto; border: 1px solid #222; padding: 40px 20px; border-radius: 25px; background: #080808; box-shadow: 0 10px 40px rgba(0, 210, 255, 0.15); text-align: center;">
+        
+        <div style="background: rgba(0, 210, 255, 0.1); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <span style="font-size: 30px;">✉️</span>
+        </div>
+
+        <h2 style="color:#00d2ff; letter-spacing:4px; font-weight: 900; margin-top: 0; text-transform: uppercase;">Get In Touch</h2>
+        
+        <p style="color:#ffffff; line-height:1.6; font-size: 16px; margin-bottom: 30px;">
+            Have questions, feedback, or need a custom bio? We're here to help you shine in the digital world.
+        </p>
+
+        <div style="background: #111; padding: 25px; border-radius: 15px; border: 1px dashed #333; margin-bottom: 30px;">
+            <div style="color:#00d2ff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">Official Support</div>
+            <a href="mailto:teampago.official@gmail.com" style="color:#fff; font-size: 18px; text-decoration: none; font-weight: bold; word-break: break-all;">teampago.official@gmail.com</a>
+            
+            <div style="width: 50px; height: 1px; background: #222; margin: 15px auto;"></div>
+            
+            <div style="color: #666; font-size: 13px;">
+                ⏱️ <b>Response Time:</b> Within 24-48 Hours
+            </div>
+        </div>
+
+        <p style="color:#444; line-height:1.6; font-size: 13px; margin-bottom: 30px;">
+            Your feedback helps <b>PAGO VIBE</b> grow. Feel free to contact us for any technical assistance or to report a bug.
+        </p>
+
+        <button onclick="this.parentElement.parentElement.style.display='none'" 
+                style="padding:16px 60px; background:linear-gradient(45deg, #00d2ff, #3a7bd5); border:none; border-radius:40px; color:#fff; font-weight:bold; cursor:pointer; box-shadow: 0 5px 20px rgba(0,210,255,0.4); transition: 0.3s; width: 80%;">
+            CLOSE
+        </button>
+
+        <p style="text-align:center; color:#222; font-size:10px; font-weight:bold; letter-spacing:3px; margin-top: 30px;">
+            PAGO GLOBAL COMMUNICATIONS
+        </p>
+    </div>
+</div>
+
+
+<script>
+// 100+ Decorative Symbols
+const syms = [
+    "꧁","꧂","亗","〆","★","☆","⚡","🔥","☠︎","☣︎","☢︎","☯︎","⚔︎","⚚","『","』","༺","༻","ʚ","ɞ","×","÷","۞","◈","⟁","⌬","☾","☼","☁︎","☂︎","☃︎","☄︎","☇","☈","☉","☊","☋","☌","☍","☎︎","☏","☐","☑︎","☒","☓","☕︎","☖","☗","☘︎","☙","☚","☛","☜","☝︎","☞","☟","☠︎","☡","☢︎","☣︎","☤","☥","☦︎","☧","☨","☩","☪︎","☫","☬","☭","☮︎","☯︎","☸︎","♈︎","♉︎"," PAGO ","♋︎","♌︎"," Don ","♎︎","♏︎","♐︎","♑︎","♒︎","♓︎","♔","♕","♖","♗","♘","♙","♚","♛","♜","♝","♞","♟","☾","☽","❄","❅","❆","❇","❈","❉","❊","❋"
+];
+
+// Font Mapping
+const maps = {
+    bold: {'a':'𝗮','b':'𝗯','c':'𝗰','d':'𝗱','e':'𝗲','f':'𝗳','g':'𝗴','h':'𝗵','i':'𝗶','j':'𝗷','k':'𝗸','l':'𝗹','m':'𝗺','n':'𝗻','o':'𝗼','p':'𝗽','q':'𝗾','r':'𝗿','s':'𝘀','t':'𝘁','u':'𝘂','v':'𝘃','w':'𝘄','x':'𝘅','y':'𝘆','z':'𝘇'},
+    italic: {'a':'𝘢','b':'𝘣','c':'𝘤','d':'𝘥','e':'𝘦','f':'𝘧','g':'𝘨','h':'𝘩','i':'𝘪','j':'𝘫','k':'𝘬','l':'𝘭','m':'𝘮','n':'𝘯','o':'𝘰','p':'𝘱','q':'𝘲','r':'𝘳','s':'𝘴','t':'𝘵','u':'𝘶','v':'𝘷','w':'𝘸','x':'𝘹','y':'𝘺','z':'𝘻'},
+    script: {'a':'𝓪','b':'𝓫','c':'𝓬','d':'𝓭','e':'𝓮','f':'𝓯','g':'𝓰','h':'𝓱','i':'𝓲','j':'𝓳','k':'','l':'𝓵','m':'𝓶','n':'𝓷','o':'𝓸','p':'𝓹','q':'𝓺','r':'𝓻','s':'𝓼','t':'𝓽','u':'𝓾','v':'𝓿','w':'𝔀','x':'𝔁','y':'𝔂','z':'𝔃'},
+    mono: {'a':'𝚊','b':'𝚋','c':'𝚌','d':'𝚍','e':'𝚎','f':'𝚏','g':'𝚐','h':'𝚑','i':'𝚒','j':'𝚓','k':'𝚔','l':'𝚕','m':'𝚖','n':'𝚗','o':'𝚘','p':'𝚙','q':'𝚚','r':'𝚛','s':'𝚜','t':'𝚝','u':'𝚞','v':'𝚟','w':'23','x':'𝚡','y':'𝚢','z':'𝚣'},
+    bubble: {'a':'ⓐ','b':'ⓑ','c':'ⓒ','d':'ⓓ','e':'ⓔ','f':'ⓕ','g':'ⓖ','h':'ⓗ','i':'ⓘ','j':'ⓙ','k':'ⓚ','l':'ⓛ','m':'ⓜ','n':'ⓝ','o':'ⓞ','p':'ⓟ','q':'ⓠ','r':'ⓡ','s':'ⓢ','t':'ⓣ','u':'ⓤ','v':'ⓥ','w':'ⓦ','x':'ⓧ','y':'ⓨ','z':'ⓩ'}
+};
+
+function convert(txt, map) {
+    return txt.toLowerCase().split('').map(c => map[c] || c).join('');
+}
+
+function generate300Styles() {
+    const name = document.getElementById('userInput').value.trim();
+    const grid = document.getElementById('resultGrid');
+    if(!name) { alert("Please enter a name first!"); return; }
+    grid.innerHTML = "";
+
+    // Generate exactly 310 variations
+    for(let i=0; i<310; i++) {
+        let s1 = syms[Math.floor(Math.random() * syms.length)];
+        let s2 = syms[Math.floor(Math.random() * syms.length)];
+        let res = "";
+
+        const styleType = i % 10;
+        if(styleType === 0) res = `꧁༺${convert(name, maps.bold)}༻꧂`;
+        else if(styleType === 1) res = `亗『${name.toUpperCase()}』亗`;
+        else if(styleType === 2) res = `${s1} ${convert(name, maps.script)} ${s2}`;
+        else if(styleType === 3) res = `〆${convert(name, maps.mono)}〆`;
+        else if(styleType === 4) res = `×º°”˜${name}˜”°º×`;
+        else if(styleType === 5) res = `【${convert(name, maps.bubble)}】`;
+        else if(styleType === 6) res = `☠︎ ${name.split('').join(' ')} ☠︎`;
+        else if(styleType === 7) res = `⚡ ${convert(name, maps.italic)} ⚡`;
+        else if(styleType === 8) res = `${s1}${s2} ${name} ${s2}${s1}`;
+        else res = `『${s1}』${name}『${s1}』`;
+
+        const div = document.createElement('div');
+        div.className = 'name-card';
+       div.innerText = res;
+        div.onclick = () => {
+            navigator.clipboard.writeText(res);
+            const toast = document.getElementById("notification");
+            toast.innerText = "Copied: " + res;
+     
+            toast.className = "show";
+            setTimeout(() => { toast.className = ""; }, 3000);
+        };
+        grid.appendChild(div);
+    }
+} function createRipple(e) {
+  const button = e.currentTarget;
+  const circle = document.createElement("span");
+  const diameter = Math.max(button.clientWidth, button.clientHeight);
+  const radius = diameter / 2;
+
+  circle.style.width = circle.style.height = diameter + "px";
+  circle.style.left = e.offsetX - radius + "px";
+  circle.style.top = e.offsetY - radius + "px";
+  circle.classList.add("ripple");
+
+  const ripple = button.getElementsByClassName("ripple")[0];
+  if (ripple) ripple.remove();
+
+  button.appendChild(circle);
+}
+
+/* Apply only to these 2 buttons */
+document.getElementById("pago-btn-bio-select" ).addEventListener("click", createRipple);
+document.getElementById("pago-btn-name-select").addEventListener("click", createRipple);
+function jj() {
+document.getElementById("q").style.display="none";
+document.getElementById("pa").style.display="block";
+document.body.style.background="black";
+
+document.body.style.display="block"
+
+}
+function jk()
+{
+    document.getElementById("w").style.display="none";
+document.getElementById("q").style.display="block";
+}
+function ap()
+{
+    document.getElementById("q").style.display="none";
+    document.getElementById("qw").style.display="block";
+  document.body.style.background="radial-gradient(circle at top right, #1e293b, #0f172a);"
+   
+}
+function tt() {
+    document.getElementById("qw").style.display="none";
+    document.getElementById("o").style.display="block";
+    
+    // Body reset logic
+    document.body.style.display="block"; // Flex ki jagah block taaki width na bigde
+    document.body.style.width="100%";
+    document.body.style.background="radial-gradient(circle at top right, #450a0a, #000000)";
+    document.body.style.height="auto";
+    document.body.style.padding="20px 0";
+    window.scrollTo(0,0);
+}
+
+
+  let icons = ["🦁", "👑", "😈", "🦅", "⚔️", "🔥", "🐆", "🥊", "🦇", "🐺", "🦂", "🧿"];
+    
+    let roles = [
+        "King of My Own World 👑",
+        "Rule Breaker & Game Changer 🎰",
+        "Silent Killer with Loud Results 🤫",
+        "Legend Since Birth 🦅",
+        "Attitude Depends on You 😎",
+        "Don't Judge Me, You Can't Handle Me 🚫",
+        "Born to Shine, Not to Fit In ✨",
+        "I Don't Follow Trends, I Lead Them 🦁",
+        "Simplicity is My Swag 💎",
+        "Hulk Mode Always On 👹"
+    ];
+
+    let attitudeLines = [
+        "My life, My rules, My attitude. 💯",
+        "Success is my only revenge. 🏆",
+        "Your opinion of me is not my reality. 🚫",
+        "I’m not heartless, I just use my heart less. 🖤",
+        "Love me or hate me, I'm still gonna shine. 🌟",
+        "Focus on your goals, not on the noise. 🎯",
+        "Work until your haters ask if you're hiring. 💼",
+        "Confidence is silent, insecurities are loud. 🤫",
+        "I don't have an attitude problem, I have a personality you can't handle. 🔥",
+        "Winners focus on winning, losers focus on winners. 🏁"
+    ];
+
+    let footerWarnings = [
+        "Stay Real or Stay Away. 🤝",
+        "Badshah of My Heart. ❤️",
+        "Welcome to My Kingdom. 👑",
+        "Haters are My Biggest Fans. 🤡",
+        "Straight Out of Hell. 😈",
+        "Mind My Business, Grow My Empire. 🏗️",
+        "Too Busy to Hate Anyone. 💅",
+        "Respect is Earned, Not Asked. ⚔️"
+    ];
+
+    function generateAttitudeBios() {
+        let inputName = document.getElementById("name").value.trim();
+        let name = inputName || "ATTITUDE BOY";
+        
+        let wrapper = document.getElementById("outputWrapper");
+        wrapper.innerHTML = ""; 
+
+        for (let i = 0; i < 105; i++) {
+            let icon = icons[Math.floor(Math.random() * icons.length)];
+            let role = roles[Math.floor(Math.random() * roles.length)];
+            let line = attitudeLines[Math.floor(Math.random() * attitudeLines.length)];
+            let foot = footerWarnings[Math.floor(Math.random() * footerWarnings.length)];
+
+            // Formatting name
+            let styledName = name.toUpperCase();
+            if(i % 5 === 0) styledName = `亗 ${name.toUpperCase()} 亗`;
+            if(i % 8 === 0) styledName = `👹 ${name.toUpperCase()} 🦁`;
+
+            // Attitude Format
+            let fullBio = `${styledName} ${icon}\n━━━━━━━━━━━━━━\n🔥 ${role}\n💎 ${line}\n🚫 ${foot}`;
+
+            let bioDiv = document.createElement("div");
+            bioDiv.className = "bio-item";
+            bioDiv.innerText = fullBio;
+            
+            bioDiv.onclick = function() {
+                navigator.clipboard.writeText(fullBio);
+                let originalText = this.innerText;
+                this.innerText = "✅ Copied!";
+            this.style.color = "white";
+            this.style.boxShadow = "0 4px 15px rgba(255, 75, 43, 0.4)";
+            this.style.fontWeight = "800"
+;
+            this.style.background = "linear-gradient(135deg, #FF4B2B, #FF416C)";
+                setTimeout(() => {
+                    this.innerText = originalText;
+                    this.style.color = "#f1f5f9";
+                }, 1000);
+            };
+
+            wrapper.appendChild(bioDiv);
+        }
+    }
+    function pagoRunGenerator() {
+            const icons = ["🤷‍♂️", "🍕", "💤", "🔋", "🐒", "🤡", "🍿", "🍩", "🦥", "🫠", "🦄", "🥨", "🧋"];
+            const roles = ["Professional Overthinker 🧠", "Part-time Human 🦥", "CEO of Laziness 😴", "Expert in Avoiding People 🏃‍♂️💨", "Official Cake Murderer 🎂🔪", "Gareeb Student 💸", "Energy Saving Mode 🔋", "Born young 👶", "Bed Lover 🛌", "Chai Lover ☕","Gareeb Student with High Dreams 💸",
+        "Not Lazy, Just on Energy Saving Mode 🔋",
+        "Born at a very young age 👶",
+        "Relationship Status: In love with my Bed 🛌",
+        "Professional Tea Drinker (Chai Lover) ☕"];
+            const lines = ["I’m not short, I’m concentrated awesome.", "My wallet is like an onion 🧅", "Need a 6-month vacation.", "I see food and I eat it. 🍔", "My bed is magical.", "Smile while you have teeth. 😁", "I’m mean, not funny.", "Instagram filter magic.", "Doing nothing is hard.", "Pro in procrastinate. 😎 ","I m not short, I’m just concentrated awesome.",
+        "My wallet is like an onion, opening it makes me cry. 🧅",
+        "I need a six-month vacation, twice a year.",
+        "I'm on a seafood diet. I see food and I eat it. 🍔",
+        "My bed is a magical place where I suddenly remember everything I forgot to do.",
+        "Life is short. Smile while you still have teeth. 😁",
+        "I’m actually not funny, I’m just mean and people think I’m joking.",
+        "Maybe she's born with it, maybe it's an Instagram filter.",
+        "Doing nothing is hard, you never know when you're finished.",
+        "I put the 'pro' in procrastinate. 😎"];
+            const footers = ["Error 404: Bio not found.", "Follow me (mom said so).", "4/5 people recommend me.", "Avoiding friends here.", "I'm a star 🌟", "Wifi, Food, Bed. Perfection.", "I'm lost too. 🗺️", "Hair > Life organization."];
+
+            let inputVal = document.getElementById("pago-field-name").value.trim();
+            let name = inputVal || "Khatarnak Insaan";
+            
+            let wrapper = document.getElementById("pago-results-area");
+            wrapper.innerHTML = ""; 
+
+            for (let i = 0; i < 105; i++) {
+                let bio = `${name.toUpperCase()} ${icons[Math.floor(Math.random() * icons.length)]}\n━━━━━━━━━━━━━━\n😜 ${roles[Math.floor(Math.random() * roles.length)]}\n✨ ${lines[Math.floor(Math.random() * lines.length)]}\n📌 ${footers[Math.floor(Math.random() * footers.length)]}`;
+
+                let div = document.createElement("div");
+                div.className = "pago-single-bio";
+                div.innerText = bio;
+                
+                div.onclick = function() {
+                    navigator.clipboard.writeText(bio);
+                    let old = this.innerText;
+                    this.innerText = "✅ Copied!";
+      this.style.background = "linear-gradient(135deg, #FFD200, #F7971E)";
+      this.style.color = "#000"; 
+       this.style.fontWeight = "800" ;
+       this.style.border = "none"    ;  
+       
+       this.style.boxShadow = "0 4px 15px rgba(255, 210, 0, 0.4)";
+       
+       
+             setTimeout(() => { this.innerText = old; }, 1000);
+                };
+
+                wrapper.appendChild(div);
+            }
+        }
+        function sol() {
+    // Purana section hide karo
+    document.getElementById("qw").style.display = "none";
+    
+    // Funny Bio wala section (qo) dikhao
+    let qoSection = document.getElementById("qo");
+    qoSection.style.display = "flex";
+    
+    // Body ko reset karo taaki content perfect center mein aaye
+    document.body.style.display = "flex";
+    document.body.style.alignItems = "center";
+    document.body.style.justifyContent = "center";
+    document.body.style.minHeight = "100vh"; 
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+    document.body.style.width = "100%";
+    document.body.style.background = "radial-gradient(circle at top right, #334155, #0f172a)";
+
+    // Wrapper ko bhi screen ki puri width/height do
+    qoSection.style.width = "100%";
+    qoSection.style.height = "100%";
+}
+
+   
+   
+   
+  function pagoGenerateAction() {
+        // Sabhi original symbols aur lines yahan hain
+        const icons = ["⚔️", "🔫", "🎯", "🕹️", "🎮", "🔥", "👑", "💀", "👾", "⚡", "🏆", "🛡️", "🚀", "💥"];
+        
+        const roles = [
+            "Rush Gameplay Specialist 🏎️",
+            "Sniper King | One Tap God 🏹",
+            "Competitive eSports Athlete 🏆",
+            "IGL (In-Game Leader) 🚩",
+            "Support Player | Clutch Master 🛡️",
+            "Aggressive Assaulter 💥",
+            "Conqueror Tier Player 🎖️",
+            "Solo vs Squad Expert 🦁",
+            "Leveling Up Every Day 🆙",
+            "Gaming is My DNA 🧬",
+            "Born to Dominate the Lobby 👑",
+            "Joystick Master 🕹️"
+        ];
+
+        const gamingLines = [
+            "Loot first, talk later. 💰",
+            "Chicken Dinner is my daily meal. 🍗",
+            "Keep your friends close, and your enemies in your scope. 🎯",
+            "Success is my only cheat code. ⌨️",
+            "Eat. Sleep. Game. Repeat. 🔁",
+            "Not a player, I'm the entire game. 💎",
+            "My AIM is better than your future. 🔥",
+            "Silent moves, loud results in the kill-feed. 🤫",
+            "Losing is not an option in my lobby. 🚫",
+            "Fear the player who has nothing to lose. 💀",
+            "Peace through superior firepower. 🔫",
+            "Building an empire, one kill at a time. 🏛️",
+            "Born to play, forced to work. 🕹️",
+            "Stay low, aim high. 🔭",
+            "Winner Winner Chicken Dinner! 🥇"
+        ];
+
+        const status = [
+            "Join My Squad 👥",
+            "eSports Journey in Progress 📈",
+            "BGMI Lover | Pro Grind 🔫",
+            "Free Fire Warrior ⚔️",
+            "Streamer in the Making 🎬",
+            "DM for Room Match 📩",
+            "Only Hardcore Gameplay 💥",
+            "Living in the Virtual World 🌍",
+            "Respect the Grind 🙏",
+            "Unstoppable Beast Mode On 👹"
+        ];
+
+        let inputName = document.getElementById("pago-ign-input").value.trim();
+        let name = inputName || "PRO PLAYER";
+        
+        let wrapper = document.getElementById("pago-outputWrapper");
+        wrapper.innerHTML = ""; 
+
+        for (let i = 0; i < 105; i++) {
+            let icon = icons[Math.floor(Math.random() * icons.length)];
+            let role = roles[Math.floor(Math.random() * roles.length)];
+            let line = gamingLines[Math.floor(Math.random() * gamingLines.length)];
+            let st = status[Math.floor(Math.random() * status.length)];
+
+            // Name Styles
+            let styledName = name.toUpperCase();
+            if(i % 5 === 0) styledName = `亗 ${name.toUpperCase()} 亗`;
+            if(i % 7 === 0) styledName = `꧁༺ ${name} ༻꧂`;
+
+            // Full Bio Assembly
+            let fullBio = `${styledName}\n━━━━━━━━━━━━━━\n${icon} ${role}\n🔥 ${line}\n⚔️ ${st}`;
+
+            let bioDiv = document.createElement("div");
+            bioDiv.className = "pago-bio-item";
+            bioDiv.innerText = fullBio;
+            
+            bioDiv.onclick = function() {
+                navigator.clipboard.writeText(fullBio);
+                let originalText = this.innerText;
+                this.innerText = "✅ Copied!";
+                this.style.background = "linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)";
+this.style.boxShadow = "0 4px 15px rgba(0, 210, 255, 0.5)"; 
+this.style.border = "none"; // Isse button ke niche cyan glow aayega
+
+   this.style.fontWeight = "bold";             this.style.color = "#00f2fe";
+                setTimeout(() => {
+                    this.innerText = originalText;
+                    this.style.color = "#f1f5f9";
+                }, 1000);
+            };
+
+            wrapper.appendChild(bioDiv);
+        }
+    } 
+    function aq() {
+    // Pichla section hide karo
+    document.getElementById("qw").style.display = "none";
+    
+    // Gamer section dikhao
+    let gamerSection = document.getElementById("oi");
+    gamerSection.style.display = "flex"; // 'block' ki jagah 'flex' use karein
+    
+    // Body reset (Funny bio ki tarah hi)
+    document.body.style.display = "flex";
+    document.body.style.alignItems = "center";
+    document.body.style.justifyContent = "center";
+    document.body.style.minHeight = "100vh";
+    document.body.style.margin = "0";
+    document.body.style.background = "radial-gradient(circle at top right, #1e1b4b, #020617)";
+}
+function namo()
+{
+    document.getElementById("qw").style.display="none";
+document.getElementById("qe").style.display="block";
+document.body.style.display = "flex";
+    document.body.style.alignItems = "center";
+    document.body.style.justifyContent = "center";
+    document.body.style.minHeight = "100vh";
+}
+
+
+
+  // Professional Symbols for Business
+    let pgo_icons_list = ["📍", "💼", "📩", "🚀", "📈", "🌐", "💡", "🛠️", "🎯", "📊", "🧠", "🤝", "⚖️", "✨"];
+    
+    // Professional Role/Identity
+    let pgo_roles_list = [
+          "Building an empire, not just a career. 🏗️🔥",
+  "Obsessed with growth and addicted to progress. 📈⚡",
+  "Focus on the vision, the results will follow. 👁️✨",
+  "Turning 'One Day' into 'Day One'. 🚀🌑",
+  "Chasing excellence, not competition. 🏆",
+  "Quietly building, loudly succeeding. 🤫💥",
+  "I don’t follow trends, I create them. 👑",
+  "Consistent effort is my secret weapon. 🛠️🦾",
+  "Mastering the art of discipline over motivation. 🧠💯",
+  "Not here to fit in, here to lead the way. 🚩",
+  "Dreaming big, working harder, staying humble. 🙏✨",
+  "Your only limit is your soul. 🌌⚖️",
+  "Work until your signature becomes an autograph. 🖋️🔥",
+  "Success is a mindset, not a destination. 🏁",
+  "Fueling my journey with passion and persistence. ⛽❤️",
+  "Action speaks louder than a thousand excuses. 🗣️🚫",
+  "Leveling up my life, one goal at a time. 🆙🎯",
+  "Creating a legacy that speaks for itself. 📜🔥",
+  "Don't wish for it, work for it. 💪⚡",
+  "Failure is just a lesson in progress. 📚🔄",
+  "Standard high, circle small, hustle hard. 💎🤝",
+  "The goal is not to be rich, but to be legendary. 🌟",
+  "Living life by design, not by default. 🎨🗺️",
+  "Stay hungry, stay foolish, stay focused. 🦁🧩",
+  "Pressure creates diamonds. Keep grinding. 💎⛏️",
+  "Turning my 'cannot' into 'can' and my dreams into plans. 📝✨",
+  "The grind never stops, the vision never fades. ♾️👁️",
+  "Be the version of you that makes you proud. 😊🛡️",
+  "Success is the only option. 🚪🔒",
+  "Leading with purpose, living with passion. ❤️🔥"
+    ];
+
+    // Impactful Business Lines
+    let pgo_lines_list = [
+      "Converting my vision into reality, one step at a time.",
+  "Creating a legacy that the future will remember.",
+  "Building something much bigger than myself.",
+  "My journey is my message to the entire world.",
+  "Turning dreams into a roadmap for success.",
+
+  // --- Attitude & Discipline (Mehnati Vibe) ---
+  "Fuelled by passion, driven by absolute discipline.",
+  "Staying low-key while my progress makes the noise.",
+  "I don't stop when I'm tired, I stop when I'm done.",
+  "Consistent effort is my only secret weapon.",
+  "Letting my results speak louder than my words.",
+
+  // --- Growth & Evolution (Hamesha Seekhna) ---
+  "Living in a constant state of personal evolution.",
+  "Daily progress is the only competition I face.",
+  "Learning the rules only to break them like an artist.",
+  "Mastering my craft while staying a student of life.",
+  "Evolving every single day to reach the next level.",
+
+  // --- Success & Mindset (Jeetne Wala Dimag) ---
+  "Focusing on the process, trusting the final outcome.",
+  "Where others see obstacles, I only see opportunities.",
+  "Defining my own success, one goal at a time.",
+  "Success isn't just a goal, it's my daily habit.",
+  "Stay hungry, stay focused, and keep moving forward.",
+
+  // --- Short & Impactful (Chhoti Magar Moti Baatein) ---
+  "Action-oriented and results-driven mindset.",
+  "Quietly working, loudly succeeding.",
+  "Living life by design, not by default.",
+  "The grind never stops, the vision never fades.",
+  "Proof that consistency beats talent every time."    ];
+
+    function pgo_v2_start_generation() {
+        let pgo_input_name = document.getElementById("pgo_v2_user_input_node").value.trim();
+        let pgo_final_name = pgo_input_name || "Your Name";
+        
+        let pgo_output_wrapper = document.getElementById("pgo_v2_render_engine_output");
+        pgo_output_wrapper.innerHTML = ""; 
+
+        for (let i = 0; i < 105; i++) {
+            let pgo_icon = pgo_icons_list[Math.floor(Math.random() * pgo_icons_list.length)];
+            let pgo_role = pgo_roles_list[Math.floor(Math.random() * pgo_roles_list.length)];
+            let pgo_line = pgo_lines_list[Math.floor(Math.random() * pgo_lines_list.length)];
+
+            let pgo_status_options = [
+          "Building a Legacy, Not Just a Career 🏛️",
+  "Success is the Only Option 🔒",
+  "Stay Hungry, Stay Focused 🦁",
+  "Hustle in Silence, Let Success Shout 🤫🔥",
+  "Discipline Over Motivation Every Day 🧠",
+  "Your Only Limit is You 🌌",
+  "Turning Dreams into Deadlines ⏳",
+  "Prove Them Wrong with Results 🎯",
+  "The Grind Never Stops ♾️",
+  "Focus on the Vision, Trust the Process 👁️",
+  "Born to Lead, Built to Last 🚩",
+  "Consistency is the Key to Greatness 🔑",
+  "Work Until Your Name is a Brand 💎",
+  "Every Day is a New Opportunity to Win 🏆",
+  "Don't Wish for It, Work for It 💪",
+  "Fuelled by Ambition, Driven by Purpose ⛽",
+  "Excellence is a Habit, Not an Act ✨",
+  "Be the Version of You that Wins 🥇",
+  "Creating My Own Path 🛣️",
+  "Mindset is Everything 🧠⚡",
+  "Small Steps, Big Results 📈",
+  "Success is Earned, Not Given ⚒️",
+  "Keep Moving Forward ⏩",
+  "Limitless Potential 🚀",
+  "Mastering My Craft 🛠️"      ];
+
+            let pgo_selected_status = pgo_status_options[Math.floor(Math.random() * pgo_status_options.length)];
+
+            // Final Bio Formatting
+            let pgo_final_bio = `${pgo_final_name.toUpperCase()}\n━━━━━━━━━━━━━━\n${pgo_icon} ${pgo_role}\n✨ ${pgo_line}\n🚀 ${pgo_selected_status}`;
+
+            let pgo_bio_div = document.createElement("div");
+            pgo_bio_div.className = "pgo_v2_item_card_box";
+            pgo_bio_div.innerText = pgo_final_bio;
+            
+            pgo_bio_div.onclick = function() {
+                navigator.clipboard.writeText(pgo_final_bio);
+                let pgo_current_text = this.innerText;
+                this.innerText = "✅ Copied!";
+         this.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"; // Deep Purple-Blue
+this.style.boxShadow = "0 8px 25px rgba(118, 75, 162, 0.6)"; 
+this.style.border = "none";
+this.style.color = "#fff";
+this.style.fontWeight = "600"; // Text ko thoda bold rakho
+    
+                setTimeout(() => {
+                    this.innerText = pgo_current_text;
+                    this.style.color = "#f1f5f9";
+                }, 1000);
+            };
+
+            pgo_output_wrapper.appendChild(pgo_bio_div);
+        }
+    }
+    
+    
+  function aqo() 
+  {
+   document.getElementById("qw").style.display="none";
+document.getElementById("ol").style.display="block";
+document.body.style.display = "flex";
+    document.body.style.alignItems = "center";
+    document.body.style.justifyContent = "center";
+    document.body.style.minHeight = "100vh";
+     }
+     
+     
+     
+     let emojis = ["😎","🔥","👑","💫","🚀","❤️","😈","✨","💥","🎯","⚡","🖤","🌟","🥶","😏","😇","🤩","🦁","🐉","💎"];
+    let lines1 = ["Dream big, shine bright ✨", "Living life my own way 😎", "Smile is my style 😊", "Simple but significant 🌿", "Born to stand out 🔥", "Stay positive always 🌈", "Silent vibes, loud results 🤫", "Hustle with heart ❤️", "Be your own kind of beautiful 🌸", "Stay real, stay you 💯","I’m not short, I’m just concentrated awesome.",
+        "My wallet is like an onion, opening it makes me cry. 🧅",
+        "I need a six-month vacation, twice a year.",
+        "I'm on a seafood diet. I see food and I eat it. 🍔", "My life, My rules, My attitude. 💯",
+        "Success is my only revenge. 🏆",
+        "Your opinion of me is not my reality. 🚫"];
+    let lines2 = ["No Pain No Gain", "Success Loading", "Focus Mode", "Stay Rare", "Limitless & Fearless", "Built Different", "Main Character Energy", "Winning is a Habit", "Leveling Up", "Mindset on Elite"];
+
+    function generateMultipleBios() {
+        let inputName = document.getElementById("nal").value.trim();
+        let defaultNames = ["Legend", "King", "Boss", "Alpha", "Devil", "Hero", "Monster"];
+        let name = inputName || defaultNames[Math.floor(Math.random() * defaultNames.length)];
+        
+        let wrapper = document.getElementById("outputWraer");
+        wrapper.innerHTML = ""; // Purana data clear karne ke liye
+
+        // Loop 100 baar chalega
+        for (let i = 0; i < 105; i++) {
+            let e = emojis[Math.floor(Math.random() * emojis.length)];
+            let l1 = lines1[Math.floor(Math.random() * lines1.length)];
+            let l2 = lines2[Math.floor(Math.random() * lines2.length)];
+
+            // Stylish variation for Name
+            let finalName = name;
+            if(i % 3 === 0) finalName = `亗 ${name.toUpperCase()} 亗`;
+            if(i % 5 === 0) finalName = `꧁༺ ${name} ༻꧂`;
+
+            let fullBio = `${e} ${finalName} | ${l1} | ${l2}`;
+
+            // Naya bio element banana
+            let bioDiv = document.createElement("div");
+            bioDiv.className = "bo-tm";
+            bioDiv.innerText = fullBio;
+            
+            // Click to Copy function
+            bioDiv.onclick = function() {
+                navigator.clipboard.writeText(fullBio);
+                let originalText = this.innerText;
+                this.innerText = "✅ Copied to Clipboard!";
+                this.style.background = "linear-gradient(135deg, #8E2DE2, #4A00E0)"; 
+this.style.boxShadow = "0 4px 15px rgba(142, 45, 226, 0.5)"; // Purple Glow
+this.style.color = "white"; // White text is par best lagega
+
+               
+                setTimeout(() => {
+                    this.innerText = originalText;
+                    this.style.color = "#e2e8f0";
+                }, 1000);
+            };
+
+            wrapper.appendChild(bioDiv);
+        }
+    }
+ 
+
+    </script>
+    </body>
+    </html>
