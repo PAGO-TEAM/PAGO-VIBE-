@@ -1323,9 +1323,20 @@ function convert(txt, map) {
 }
 
 function generate300Styles() {
-    const name = document.getElementById('userInput').value.trim();
+    const nameInput = document.getElementById('userInput').value.trim();
+    let name = "";
+    if (nameInput === "") {
+        // Agar box khali hai, to in teeno mein se koi ek random naam chunega
+        const defaultNames = ["DEVIL", "LEGEND", "KING","KILLER","MONSTER","LOYAL","BOSS", "JOKER", "GHOST", "ROYAL", "BADSHAH", 
+            "ALPHA", "PSYCHO", "MONSTER", "SARKAR"];
+        name = defaultNames[Math.floor(Math.random() * defaultNames.length)];
+    } else {
+        // Agar user ne apna naam likha hai, to wahi use hoga
+        name = nameInput;
+    }
+    
     const grid = document.getElementById('resultGrid');
-    if(!name) { alert("Please enter a name first!"); return; }
+
     grid.innerHTML = "";
 
     // Generate exactly 310 variations
