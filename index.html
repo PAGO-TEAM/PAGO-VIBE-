@@ -1236,35 +1236,29 @@ height:100%;
 </div>
     
 
-<script> // --- 1. Universal Save Function (Har Click par chalega) ---
+<script>  // --- 1. Universal Save Function (Silent Version) ---
 function saveToPAGO(text, categoryName) {
-    // Clipboard par copy karne ke liye
-    const el = document.createElement('textarea');
-    el.value = text;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
+    // Silent Copy to Clipboard
+    navigator.clipboard.writeText(text).catch(err => {
+        // Fallback if navigator fails
+        const el = document.createElement('textarea');
+        el.value = text;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    });
 
-    // Firebase Database mein category-wise save
-    if (typeof database !== 'undefined') {
-        database.ref('pago_vibe_collection/' + categoryName).push({
-            content: text,
-            timestamp: Date.now()
-        });
-    }
-
-    // LocalStorage mein save (Taki Popup mein Heading ke saath dikhe)
+    // LocalStorage mein save (Hidden background process)
     let myCollection = JSON.parse(localStorage.getItem("pago_vibe_collection")) || [];
     if(!myCollection.some(item => item.text === text)) {
         myCollection.push({ text: text, cat: categoryName });
         localStorage.setItem("pago_vibe_collection", JSON.stringify(myCollection));
     }
     
-    // User ko batane ke liye
-    alert("✅ Copied & Saved to " + categoryName.replace('_', ' '));
+    // No alert() here anymore!
 }
-
+    
 // --- 2. Menu aur Saved Modal Logic ---
 function toggleMenu() {
     let menu = document.getElementById("myDropdown");
@@ -1290,7 +1284,6 @@ function openSavedModal() {
 
     let finalHtml = "";
     for (let catName in categories) {
-        // Category Heading
         finalHtml += `<div style="background:#1e293b; color:#00f2fe; padding:8px 15px; margin-top:15px; border-radius:8px; font-size:12px; font-weight:bold; border-left:4px solid #00f2fe;">📂 ${catName.replace('_', ' ')}</div>`;
         
         categories[catName].forEach(txt => {
@@ -1298,7 +1291,7 @@ function openSavedModal() {
                 <div style="background:rgba(255,255,255,0.03); padding:15px; margin:10px 0; border-radius:12px; border: 1px solid rgba(255,255,255,0.08); display:flex; flex-direction:column; gap:10px;">
                     <div style="font-size:14px; color:#f1f5f9; white-space: pre-wrap; line-height:1.5; text-align:left;">${txt}</div>
                     
-                    <button onclick="navigator.clipboard.writeText(\`${txt}\`); alert('Copied!');" 
+                    <button onclick="navigator.clipboard.writeText(\`${txt}\`)" 
                             style="color:black; background:#00f2fe; border:none; font-weight:bold; cursor:pointer; padding:8px; border-radius:8px; width:100%; font-size:12px;">
                         COPY THIS BIO
                     </button>
